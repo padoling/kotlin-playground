@@ -7,5 +7,6 @@ import org.springframework.boot.runApplication
 class KopringPlaygroundApplication
 
 fun main(args: Array<String>) {
+    // SpringApplication.run(KopringPlaygroundApplication::class.java, *args)의 idiomatic alternative
     runApplication<KopringPlaygroundApplication>(*args)
 }
