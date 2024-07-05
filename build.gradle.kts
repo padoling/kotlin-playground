@@ -1,6 +1,7 @@
 plugins {
     id("org.springframework.boot") version "3.3.1"
     id("io.spring.dependency-management") version "1.1.5"
+    id("org.jlleitschuh.gradle.ktlint") version "12.1.1"
 
     // 엔티티 관련 어노테이션이 붙은 클래스에 자동으로 기본 생성자를 만들어준다.
     kotlin("plugin.jpa") version "1.9.24"
