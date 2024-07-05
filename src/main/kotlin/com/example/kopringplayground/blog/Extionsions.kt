@@ -1,4 +1,4 @@
-package com.example.kopringplayground.extension
+package com.example.kopringplayground.blog
 
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatterBuilder

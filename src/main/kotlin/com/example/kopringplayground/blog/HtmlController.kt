@@ -1,4 +1,4 @@
-package com.example.kopringplayground.controller
+package com.example.kopringplayground.blog
 
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model

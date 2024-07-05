@@ -1,4 +1,4 @@
-package com.example.kopringplayground
+package com.example.kopringplayground.blog
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.AfterAll

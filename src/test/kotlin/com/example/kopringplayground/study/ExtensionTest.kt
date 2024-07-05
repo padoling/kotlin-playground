@@ -1,7 +1,7 @@
 package com.example.kopringplayground.study
 
-import com.example.kopringplayground.extension.format
-import com.example.kopringplayground.extension.toSlug
+import com.example.kopringplayground.blog.format
+import com.example.kopringplayground.blog.toSlug
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import java.time.LocalDateTime
