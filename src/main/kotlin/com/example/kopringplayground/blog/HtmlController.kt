@@ -11,12 +11,14 @@ import org.springframework.web.server.ResponseStatusException
 @Controller
 class HtmlController(
     private val repository: ArticleRepository,
+    private val properties: BlogProperties,
 ) {
     @GetMapping("/")
     fun blog(model: Model): String {
         // model.addAttribute("title", "Blog")와 같음
         // set operator가 확장함수로 정의되어 있어 사용 가능
         model["title"] = "Blog"
+        model["banner"] = properties.banner
         model["articles"] = repository.findAllByOrderByAddedAtDesc().map { it.render() }
         return "blog"
     }

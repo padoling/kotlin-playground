@@ -17,6 +17,9 @@ plugins {
 
     // allopen plugin for jpa
     kotlin("plugin.allopen") version "1.9.24"
+
+    // kotlin annotation processing tool
+    kotlin("kapt") version "1.9.24"
 }
 
 group = "com.example"
@@ -42,6 +45,9 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     runtimeOnly("com.h2database:h2")
+
+    kapt("org.springframework.boot:spring-boot-configuration-processor")
+
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
         exclude(module = "mockito-core")
     }
